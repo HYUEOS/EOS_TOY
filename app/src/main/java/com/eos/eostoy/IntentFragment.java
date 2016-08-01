@@ -25,7 +25,9 @@ public class IntentFragment extends Fragment {
 
         intentView = (RecyclerView)view.findViewById(R.id.intent_view);
 
+        // RecyclerView 에 LinearLayoutManager를 셋팅
         intentView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        // 만들어 둔 IntentAdapter를 RecyclerView에 셋팅
         intentView.setAdapter(new IntentAdapter(getActivity(), Manager.getIntentList()));
 
         return view;

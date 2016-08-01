@@ -16,6 +16,7 @@ public class Manager {
 
     private static ArrayList<IntentData> intentList = new ArrayList<>();
 
+    /** intent list 를 반환. 만약 size 가 0 이라면 값을 셋팅한 후 반환 **/
     public static ArrayList<IntentData> getIntentList() {
         if (intentList.size() == 0) {
             //TODO add intent data
